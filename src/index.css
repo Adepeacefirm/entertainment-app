@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+*,
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(223, 30%, 9%);
+}
+
+@theme {
+  --color-blue950: hsl(223, 30%, 9%);
+  --color-blue900: hsl(223, 36%, 14%);
+  --color-blue500: hsl(223, 23%, 46%);
+  --color-red500: hsl(0, 97%, 63%);
+}
