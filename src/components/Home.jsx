@@ -62,7 +62,7 @@ const Home = () => {
       {search ? (
         <div>
           <h1 className="mb-5 text-white/80 sm:text-2xl tracking-widest">
-            Found {filteredResult.length} results for "{search}"
+            Found {filteredResult.length} results for &apos;{search}&apos;
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredResult.map((item, index) => (
@@ -121,10 +121,7 @@ const Home = () => {
         <div>
           <section>
             <h1 className="text-white text-2xl">Trending</h1>
-            <div
-              tabIndex={0}
-              className="overflow-x-auto scroll-smooth my-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
-            >
+            <div className="overflow-x-auto scroll-smooth my-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex my-3 gap-3">
                 {data.map((item, index) => (
                   <div
