@@ -64,7 +64,7 @@ const Series = () => {
         {search ? (
           <div>
             <h1 className="mb-5 text-white/80 sm:text-2xl tracking-widest">
-              Found {filteredResult.length} results for '{search}'
+              Found {filteredResult.length} results for "{search}"
             </h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {filteredResult.map((item, index) => (

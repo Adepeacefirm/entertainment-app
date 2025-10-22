@@ -62,7 +62,7 @@ const Home = () => {
       {search ? (
         <div>
           <h1 className="mb-5 text-white/80 sm:text-2xl tracking-widest">
-            Found {filteredResult.length} results for '{search}'
+            Found {filteredResult.length} results for "{search}"
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredResult.map((item, index) => (
@@ -121,10 +121,16 @@ const Home = () => {
         <div>
           <section>
             <h1 className="text-white text-2xl">Trending</h1>
-            <div className="overflow-x-auto scroll-smooth my-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div
+              tabIndex={0}
+              className="overflow-x-auto scroll-smooth my-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+            >
               <div className="flex my-3 gap-3">
                 {data.map((item, index) => (
-                  <div className="shrink-0 inline-flex cursor-pointer" key={index}>
+                  <div
+                    className="shrink-0 inline-flex cursor-pointer"
+                    key={index}
+                  >
                     {item.thumbnail?.trending?.small && (
                       <div className="w-56 sm:w-96 rounded-2xl relative z-10">
                         <img
